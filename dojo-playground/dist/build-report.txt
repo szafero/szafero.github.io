@@ -1,0 +1,238 @@
+Build started: Wed Aug 27 2014 17:00:52 GMT-0400 (EDT)
+Build application version: 1.10.0 (fe3c741)
+Messages:
+info(103) Optimizing module complete.
+	/Users/szafero/szafero.github.io/dojo-playground/dist/dojo-playground/main.js (compile time:12.003s)
+	/Users/szafero/szafero.github.io/dojo-playground/dist/dojo/dojo.js (compile time:15.284s)
+info(106) Optimizing CSS.
+	file: /Users/szafero/szafero.github.io/dojo-playground/src/dojo/_firebug/firebug.css
+	file: /Users/szafero/szafero.github.io/dojo-playground/src/dojo/resources/dnd.css
+	file: /Users/szafero/szafero.github.io/dojo-playground/src/dojo/resources/dojo.css
+	file: /Users/szafero/szafero.github.io/dojo-playground/src/dojo-playground/resources/main.css
+info(107) Package Version:
+	package: dojo; version: 1.10.0
+warn(216) dojo/has plugin resource could not be resolved during build-time.
+	plugin resource id: dom-addeventlistener?:./aspect; reference module id: dojo/on
+	plugin resource id: host-browser?dom-addeventlistener?:../on:; reference module id: dojo/request/watch
+warn(224) A plugin dependency was encountered but there was no build-time plugin resolver.
+	module: dojo/request; plugin: dojo/request/default
+	module: dojo/request/node; plugin: dojo/node
+	module: dojo/request/node; plugin: dojo/node
+	module: dojo/request/node; plugin: dojo/node
+	module: dojo/request/node; plugin: dojo/node
+	module: dojo/request/registry; plugin: dojo/request/default
+warn(228) While optimizing a CSS file, an import directive was not expanded because the source for the import was not available to the builder.
+	CSS file: /Users/szafero/szafero.github.io/dojo-playground/src/dojo-playground/resources/main.css; import directive: @import "../../dijit/themes/claro/claro.css";
+	CSS file: /Users/szafero/szafero.github.io/dojo-playground/src/dojo-playground/resources/main.css; import directive: @import "../../dgrid/css/skins/claro.css";
+Layer Contents:
+dojo/dojo:
+	dojo/dojo
+	dojo/i18n
+	dojo/_base/kernel
+	dojo/has
+	dojo/_base/config
+	dojo/_base/array
+	dojo/_base/lang
+	dojo/sniff
+	dojo/_base/xhr
+	dojo/_base/sniff
+	dojo/io-query
+	dojo/dom
+	dojo/_base/window
+	dojo/dom-form
+	dojo/json
+	dojo/_base/Deferred
+	dojo/Deferred
+	dojo/errors/CancelError
+	dojo/errors/create
+	dojo/promise/Promise
+	dojo/promise/instrumentation
+	dojo/promise/tracer
+	dojo/Evented
+	dojo/aspect
+	dojo/on
+	dojo/when
+	dojo/_base/json
+	dojo/request/watch
+	dojo/request/util
+	dojo/errors/RequestError
+	dojo/errors/RequestTimeoutError
+	dojo/request/xhr
+	dojo/request/handlers
+	dojo/selector/_loader
+
+dojo-playground/main:
+	dojo-playground/main
+	dojo/query
+	dojo/selector/acme
+	dojo/NodeList-dom
+	dojo/dom-class
+	dojo/dom-construct
+	dojo/dom-attr
+	dojo/dom-style
+	dojo/dom-prop
+	dojo/_base/connect
+	dojo/topic
+	dojo/_base/event
+	dojo/dom-geometry
+	dojo/mouse
+	dojo/keys
+
+Optimizer Messages:
+/Users/szafero/szafero.github.io/dojo-playground/dist/dojo-playground/main.js:
+Done (compile time:12.003s)
+/Users/szafero/szafero.github.io/dojo-playground/dist/dojo-playground/main.js:
+Done (compile time:12.003s)
+/Users/szafero/szafero.github.io/dojo-playground/dist/dojo/dojo.js:
+dojo.js.uncompressed.js:148: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+dojo.js.uncompressed.js:158: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+dojo.js.uncompressed.js:219: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+dojo.js.uncompressed.js:236: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+dojo.js.uncompressed.js:574: WARNING - unreachable code
+					if( 0  && p=="async"){
+					                     ^
+
+dojo.js.uncompressed.js:695: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+dojo.js.uncompressed.js:703: WARNING - unreachable code
+		if( 0 ){
+		       ^
+
+dojo.js.uncompressed.js:730: WARNING - unreachable code
+	}else{
+	     ^
+
+dojo.js.uncompressed.js:746: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+dojo.js.uncompressed.js:759: WARNING - unreachable code
+				if( 0  && comboPending && !comboPendingTimer){
+				                                             ^
+
+dojo.js.uncompressed.js:858: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+dojo.js.uncompressed.js:863: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+dojo.js.uncompressed.js:950: WARNING - unreachable code
+			if( 0 ){
+			       ^
+
+dojo.js.uncompressed.js:1055: WARNING - unreachable code
+				if( 0  && legacyMode == sync && !plugin.executed){
+				                                                 ^
+
+dojo.js.uncompressed.js:1237: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+dojo.js.uncompressed.js:1312: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+dojo.js.uncompressed.js:1412: WARNING - unreachable code
+				if( 0 ){
+				       ^
+
+dojo.js.uncompressed.js:1452: WARNING - unreachable code
+					if( 0  && legacyMode){
+					                     ^
+
+dojo.js.uncompressed.js:1468: WARNING - unreachable code
+				if( 0  && legacyMode){
+				                     ^
+
+dojo.js.uncompressed.js:1553: WARNING - unreachable code
+				if( 0  && module.plugin && module.plugin.isCombo){
+				                                                 ^
+
+dojo.js.uncompressed.js:1589: WARNING - unreachable code
+				if( 0  && legacyMode && !waiting[mid]){
+				                                      ^
+
+dojo.js.uncompressed.js:1726: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+dojo.js.uncompressed.js:1738: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+dojo.js.uncompressed.js:1805: WARNING - unreachable code
+		if( 0  && args[1]===defaultDeps){
+		                                ^
+
+dojo.js.uncompressed.js:1839: WARNING - unreachable code
+				if( 0  && !targetModule){
+				                        ^
+
+dojo.js.uncompressed.js:1849: WARNING - unreachable code
+			if( 0  && isArray(targetModule)){
+			                                ^
+
+dojo.js.uncompressed.js:1867: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+dojo.js.uncompressed.js:1897: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+dojo.js.uncompressed.js:1927: WARNING - unreachable code
+		if( 0 ){
+		       ^
+
+dojo.js.uncompressed.js:1934: WARNING - unreachable code
+		if( 0 ){
+		       ^
+
+dojo.js.uncompressed.js:1939: WARNING - unreachable code
+	if( 0  && req.combo && req.combo.plugins){
+	                                         ^
+
+dojo.js.uncompressed.js:1953: WARNING - unreachable code
+	if(! 1 ){
+	        ^
+
+dojo.js.uncompressed.js:2758: WARNING - unreachable code
+	if( 0 ){
+	       ^
+
+dojo.js.uncompressed.js:2940: WARNING - unreachable code
+	if(! 1 ){
+	        ^
+
+dojo.js.uncompressed.js:3282: WARNING - unreachable code
+	}else{
+	     ^
+
+dojo.js.uncompressed.js:5100: WARNING - unreachable code
+	if(! 1 ){
+	        ^
+
+0 error(s), 36 warning(s)
+Done (compile time:15.284s)
+
+
+Process finished normally
+	errors: 0
+	warnings: 10
+	build time: 79.354 seconds

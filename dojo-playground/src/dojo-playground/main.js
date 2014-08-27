@@ -1,7 +1,7 @@
 define([
 	"exports",
 	"dojo/query",
-	"dojo/NodeList-dom",
+	"dojo/NodeList-dom"
 ], function (dojoPlayground, query) {
 	dojoPlayground.init = function () {
 		//	summary:
