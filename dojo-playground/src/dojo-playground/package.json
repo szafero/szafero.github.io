@@ -1,0 +1,4 @@
+{
+	"name": "dojo-playground",
+	"dojoBuild": "package.js"
+}

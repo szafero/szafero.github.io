@@ -1,0 +1,14 @@
+{
+  "name": "dgrid",
+  "homepage": "https://github.com/SitePen/dgrid",
+  "version": "0.3.15",
+  "_release": "0.3.15",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.15",
+    "commit": "d4d7e04438319d79ae354b2b0cf31724be4c4b7e"
+  },
+  "_source": "git://github.com/SitePen/dgrid.git",
+  "_target": "0.3.15",
+  "_originalSource": "dgrid"
+}
