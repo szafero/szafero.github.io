@@ -1,7 +1,7 @@
 /*jshint unused:false*/
 var dojoConfig = {
 	async: true,
-	baseUrl: './',
+	baseUrl: 'http://szafero.github.io/dojo-playground/dist',
 	tlmSiblingOfDojo: false,
 	isDebug: true,
 	packages: [

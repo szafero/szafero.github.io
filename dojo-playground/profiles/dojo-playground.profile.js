@@ -38,9 +38,11 @@ var profile = {
 	// defer loading large sections of code until they are actually required while still allowing multiple modules to
 	// be compiled into a single file.
 	layers: {
-		'dojo/dojo': {
+		'app': {
 			include: [
-				'dojo/i18n'
+				'dojo/dojo',
+				'dojo/i18n',
+				'dojo-playground/main'
 			],
 
 			// By default, the build system will try to include `dojo/main` in the built `dojo/dojo` layer, which adds
@@ -50,9 +52,6 @@ var profile = {
 			customBase: true
 		},
 
-		'dojo-playground/main': {
-			include: []
-		}
 	},
 
 	// Providing hints to the build system allows code to be conditionally removed on a more granular level than
