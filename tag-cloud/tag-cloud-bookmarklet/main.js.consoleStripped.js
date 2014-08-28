@@ -8560,6 +8560,10 @@ define(["./_base/lang", "./_base/array", "./dom"], function(lang, array, dom){
 });
 
 }}});
+/**
+ * A module for creating tag clouds.
+ * @module tag-cloud-bookmarklet/main
+ */
 define([
 	'exports',
 	'dojo/query',
@@ -8567,29 +8571,38 @@ define([
 	'dojo/html',
 	'dojo/NodeList-dom'
 ], function (tagCloudBookmarklet, query, array, html) {
-	var allowed_tags = ['A', 'P', 'SPAN', 'H1', 'H2', 'H3', 'H4', 'H5']
-		words = []
-		by_words = {};
+	var allowed_tags = ['A', 'P', 'SPAN', 'H1', 'H2', 'H3', 'H4', 'H5'];
+	var words = [];
+	var by_words = {};
+
+	/**
+	 * @method traverse
+	 * @param {query} node A Dojo query node. 
+	 */
 	tagCloudBookmarklet.traverse = function(node) {
 		// summary:
-		// This is a recursive function that drills down the node tree
-		// to find text.
-		var node_obj = query(node)[0]
+		// 	This is a recursive function that drills down the node tree
+		// 	to find text.
+		var node_obj = query(node)[0];
 		var nodes = node_obj.childNodes;
 		var node_inner = node_obj.innerHTML;
 		if (array.indexOf(allowed_tags, node_obj.tagName) > -1 && node_inner.length > 0 && node_inner[0] != '<') {
 			array.forEach(node_inner.match(/[a-zA-Z]{2,}$/), function(word, word_index) {
-				if (by_words[word] == undefined) {
+				if (by_words[word] === undefined) {
 					words.push(word);
 					by_words[word] = {'name': word, 'size': 0};
 				}
-				by_words[word]['size'] += 1;
+				by_words[word].size += 1;
 			});
 		}
 		array.forEach(nodes, function(child_node, node_index) {
 			tagCloudBookmarklet.traverse(child_node);
 		});
 	};
+
+	/**
+	 * @method init tag cloud initializer
+	 */
 	tagCloudBookmarklet.init = function () {
 		// summary:
 		//	This method will run after dojo has loaded. It calls a method to find all
@@ -8599,9 +8612,9 @@ define([
 		tagCloudBookmarklet.traverse(bod);
 		bod[0].innerHTML = '';
 		words.sort();
-		for (word_instance in words) {
-			word_obj = by_words[words[word_instance]]
-			bod.addContent('<p style="font-size:' + word_obj['size'] + 'em; float: left;">' + word_obj['name'] + '</p>');
+		for (var word_instance in words) {
+			var word_obj = by_words[words[word_instance]];
+			bod.addContent('<p style="font-size:' + word_obj.size + 'em; float: left;">' + word_obj.name + '</p>');
 		}
 		
 	};
