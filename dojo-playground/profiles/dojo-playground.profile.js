@@ -40,9 +40,9 @@ var profile = {
 	layers: {
 		'app': {
 			include: [
-				'dojo/dojo',
+				'dojo-playground/main',
 				'dojo/i18n',
-				'dojo-playground/main'
+				'dojo/dojo'
 			],
 
 			// By default, the build system will try to include `dojo/main` in the built `dojo/dojo` layer, which adds

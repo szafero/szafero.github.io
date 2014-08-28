@@ -16718,6 +16718,26 @@ require({cache:{
 define([], 1);
 
 },
+'dojo-playground/main':function(){
+define([
+	"exports",
+	"dojo/query",
+	"dojo/NodeList-dom"
+], function (dojoPlayground, query) {
+	dojoPlayground.init = function () {
+		//	summary:
+		//		This function is executed automatically by the loader configuration.
+		//		It will be executed after the page has loaded, the DOM is ready, and all
+		//		dependencies of this module have been loaded. Use this function to initialize
+		//		the application; for instance, creating	a page controller or running the
+		//		Dojo parser.
+
+		var acount = query('a');
+		 0 && console.log(acount.length);
+	};
+});
+
+},
 'dojo/i18n':function(){
 define(["./_base/kernel", "require", "./has", "./_base/array", "./_base/config", "./_base/lang", "./_base/xhr", "./json", "module"],
 	function(dojo, require, has, array, config, lang, xhr, json, module){
@@ -17354,26 +17374,6 @@ define(["./_base/kernel", "require", "./has", "./_base/array", "./_base/config",
 		cache:cache,
 		getL10nName: getL10nName
 	});
-});
-
-},
-'dojo-playground/main':function(){
-define([
-	"exports",
-	"dojo/query",
-	"dojo/NodeList-dom"
-], function (dojoPlayground, query) {
-	dojoPlayground.init = function () {
-		//	summary:
-		//		This function is executed automatically by the loader configuration.
-		//		It will be executed after the page has loaded, the DOM is ready, and all
-		//		dependencies of this module have been loaded. Use this function to initialize
-		//		the application; for instance, creating	a page controller or running the
-		//		Dojo parser.
-
-		var acount = query('a');
-		 0 && console.log(acount.length);
-	};
 });
 
 }}});
