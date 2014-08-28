@@ -1,7 +1,8 @@
 /*jshint unused:false*/
 var dojoConfig = {
 	async: true,
-	baseUrl: 'http://szafero.github.io/tag-cloud',
+	//baseUrl: 'http://szafero.github.io/tag-cloud',
+	baseUrl: 'http://127.0.0.1:8888',
 	tlmSiblingOfDojo: false,
 	packages: [
 		'dojo',

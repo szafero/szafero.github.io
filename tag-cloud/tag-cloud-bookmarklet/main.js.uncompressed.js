@@ -8585,9 +8585,9 @@ define([
 		// 	to find text.
 		var node_obj = query(node)[0];
 		var nodes = node_obj.childNodes;
-		var node_inner = node_obj.innerHTML;
+		var node_inner = node_obj.innerText;
 		if (array.indexOf(allowed_tags, node_obj.tagName) > -1 && node_inner.length > 0 && node_inner[0] != '<') {
-			array.forEach(node_inner.match(/[a-zA-Z]{2,}$/), function(word, word_index) {
+			array.forEach(node_inner.match(/[a-z-A-Z]{2,}\w/g), function(word, word_index) {
 				if (by_words[word] === undefined) {
 					words.push(word);
 					by_words[word] = {'name': word, 'size': 0};
@@ -8611,10 +8611,16 @@ define([
 		var bod = query('body');
 		tagCloudBookmarklet.traverse(bod);
 		bod[0].innerHTML = '';
+		var cloudElement = document.createElement('p');
+		cloudElement.id = 'cloud-text';
+		bod.addContent(cloudElement);
+		var cloudText = query('#cloud-text');
 		words.sort();
 		for (var word_instance in words) {
 			var word_obj = by_words[words[word_instance]];
-			bod.addContent('<p style="font-size:' + word_obj.size + 'em; float: left;">' + word_obj.name + '</p>');
+			console.log(cloudText);
+			cloudText.addContent('<a style="font-size:' + word_obj.size + 'em;">' + word_obj.name + '</a>');
+			//bod.addContent('<p style="font-size:' + word_obj.size + 'em; float: left;">' + word_obj.name + '</p>');
 		}
 		
 	};

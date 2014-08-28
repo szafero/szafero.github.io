@@ -1,9 +1,9 @@
-Build started: Thu Aug 28 2014 07:36:03 GMT-0400 (EDT)
+Build started: Thu Aug 28 2014 09:27:46 GMT-0400 (EDT)
 Build application version: 1.10.0 (fe3c741)
 Messages:
 info(103) Optimizing module complete.
-	/Users/szafero/projects/tag-cloud-bookmarklet/dist/tag-cloud-bookmarklet/main.js (compile time:14.801s)
-	/Users/szafero/projects/tag-cloud-bookmarklet/dist/dojo/dojo.js (compile time:15.704s)
+	/Users/szafero/projects/tag-cloud-bookmarklet/dist/tag-cloud-bookmarklet/main.js (compile time:14.14s)
+	/Users/szafero/projects/tag-cloud-bookmarklet/dist/dojo/dojo.js (compile time:14.805s)
 info(106) Optimizing CSS.
 	file: /Users/szafero/projects/tag-cloud-bookmarklet/src/dojo/_firebug/firebug.css
 	file: /Users/szafero/projects/tag-cloud-bookmarklet/src/dojo/resources/dnd.css
@@ -287,7 +287,7 @@ main.js.uncompressed.js:7542: WARNING - unreachable code
 	                                                   ^
 
 0 error(s), 2 warning(s)
-Done (compile time:14.801s)
+Done (compile time:14.14s)
 /Users/szafero/projects/tag-cloud-bookmarklet/dist/tag-cloud-bookmarklet/main.js:
 main.js.uncompressed.js:6153: WARNING - Suspicious code. This code lacks side-effects. Is there a bug?
 	new Date("X"); // workaround for #11279, new Date("") == NaN
@@ -298,7 +298,7 @@ main.js.uncompressed.js:7542: WARNING - unreachable code
 	                                                   ^
 
 0 error(s), 2 warning(s)
-Done (compile time:14.801s)
+Done (compile time:14.14s)
 /Users/szafero/projects/tag-cloud-bookmarklet/dist/dojo/dojo.js:
 dojo.js.uncompressed.js:148: WARNING - unreachable code
 	if( 0 ){
@@ -445,10 +445,10 @@ dojo.js.uncompressed.js:5118: WARNING - unreachable code
 	        ^
 
 0 error(s), 36 warning(s)
-Done (compile time:15.704s)
+Done (compile time:14.805s)
 
 
 Process finished normally
 	errors: 0
 	warnings: 27
-	build time: 87.56 seconds
+	build time: 84.436 seconds
