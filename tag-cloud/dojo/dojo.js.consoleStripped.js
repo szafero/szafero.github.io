@@ -1957,7 +1957,7 @@
 })
 (this.dojoConfig || this.djConfig || this.require || {}, {
 		async:0,
-		baseUrl:"http://127.0.0.1:8888",
+		baseUrl:"http://szafero.github.io/tag-cloud",
 		hasCache:{
 				'config-selectorEngine':"acme",
 				'config-tlmSiblingOfDojo':1,
